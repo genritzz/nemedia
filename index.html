@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+
+    <title>Responsive Website Travel</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav n_container">
+            <a href="#" class="nav__logo">Naughty Engineers Media</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contactus" class="nav__link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="nav__dark">
+                    <!-- Theme change button -->
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container n_container grid" id="cover">
+                <div class="home__data">
+                    <span class="home__data-subtitle"></span>
+                    <h1 class="home__data-title">Build A <b>Strong <br>Online</b> Presence<br> Affordably</h1>
+                    <a href="#about" class="button btn1">Learn More</a>
+
+                </div>
+
+                <!--<div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-box-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </div>-->
+
+                <!--<div class="home__info">
+                    <div>
+                        <span class="home__info-title">5 best places to visit</span>
+                        <a href="" class="button button--flex button--link home__info-button">
+                            More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info-overlay">
+                        <img src="assets/img/home2.jpg" alt="" class="home__info-img">
+                    </div>
+                </div>-->
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+        <script>
+            VANTA.CLOUDS({
+                el: "#home",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                skyColor: 0x0,
+                cloudColor: 0x788aac,
+                sunColor: 0x20c03a,
+                sunGlareColor: 0x3231ff
+            })
+        </script>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container n_container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">A bit about <br> Naughty Engineers Media</h2>
+                    <p class="about__description">We are an agency that believes that every small business deserves a
+                        <b><u>strong online presence</u></b> to improve sales.
+                        We understand that creating and maintaining an engaging website can be challenging,
+                        especially for businesses with limited resources.<br> We believe that we can help you elevate
+                        your business to the next step!<br>
+                        Interested in learning how we can help? Book a free consultation with us today!
+                    </p>
+                    <a href="#contact" class="about__btn button">Book Free Consultation</a>
+                </div>
+
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/6.png" alt="" class="about__img-one">
+                    </div>
+
+                    <div class="about__img-overlay">
+                        <img src="assets/img/7.png" alt="" class="about__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== DISCOVER ====================-->
+        <section class="discover section" id="services">
+            <h2 class="section__title">Our Services</h2>
+
+            <div class="discover__container n_container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== DISCOVER 2 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/base2.jpeg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">2. Web Design</h2>
+                            <span class="discover__description">Create a new wesbite catered to your business</span>
+                        </div>
+                    </div>
+                    <!--==================== DISCOVER 3 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/base2.jpeg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">3. SEO Optimization</h2>
+                            <span class="discover__description">Help make your business more discoverable <b>
+                                    online</b></span>
+                        </div>
+                    </div>
+                    <!--==================== DISCOVER 1 ====================-->
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/base2.jpeg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">1. Consultation</h2>
+                            <span class="discover__description">Provide a quick assessment of <br> how we can help
+                                improve your online presence. At no cost!</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== EXPERIENCE ====================-->
+
+        <section class="portfolio__section section" id="portfolio">
+            <h2 class="section__title">Our Portfolio</h2>
+
+            <div class="portfolio">
+                <div class="portfolio__container">
+                    <a href="https://saaiyetech.com/">
+                        <img src="assets/img/pfolio1.jpeg" alt="" class="experience__img-one">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== VIDEO ====================-->
+        <!--<section class="video section">
+            <h2 class="section__title">Video Tour</h2>
+
+            <div class="video__container n_container">
+                <p class="video__description">Find out more with our video of the most beautiful and
+                    pleasant places for you and your family.
+                </p>
+
+                <div class="video__content">
+                    <video id="video-file">
+                        <source src="assets/video/video.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>-->
+
+        <!--==================== SUBSCRIBE ====================-->
+        <!--
+        <section class="subscribe section">
+            <div class="subscribe__bg">
+                <div class="subscribe__container container">
+                    <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
+                    <p class="subscribe__description">Subscribe to our newsletter and get a
+                        special 30% discount.
+                    </p>
+                </div>
+            </div>
+        </section>-->
+
+        <section class="subscribe section contact-section" id="contactus">
+            <div class="subscribe__bg">
+                <div class="flex items-center min-h-screen dark:bg-gray-900">
+                    <div class="container mx-auto">
+                        <div class="max-w-md mx-auto my-10 p-5 rounded-md shadow-sm">
+                            <div class="text-center">
+                                <h1 class="my-3 text-3xl font-semibold dark:text-gray-200">
+                                    Contact Us
+                                </h1>
+                                <p class="text-gray-400 dark:text-gray-400">
+                                    Fill up the form below to send us a message.
+                                </p>
+                            </div>
+                            <div class="m-7">
+                                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                    <input type="hidden" name="access_key" value="9dedd696-7cbe-4a70-8844-f05456ab7da2" />
+                                    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                                    <div class="mb-6">
+                                        <label for="name"
+                                            class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full
+                                            Name</label>
+                                        <input type="text" name="name" id="name" placeholder="John Doe" required
+                                            class="input__color w-full px-3 py-2 placeholder-gray-300 border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                                    </div>
+                                    <div class="mb-6">
+                                        <label for="email"
+                                            class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email
+                                            Address</label>
+                                        <input type="email" name="email" id="email" placeholder="you@company.com"
+                                            required
+                                            class="input__color w-full px-3 py-2 placeholder-gray-300 border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 text-gray-300 dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                                    </div>
+                                    <div class="mb-6">
+                                        <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone
+                                            Number</label>
+                                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567"
+                                            required
+                                            class="input__color w-full px-3 py-2 placeholder-gray-300 border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 text-gray-700 dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                                    </div>
+                                    <div class="mb-6">
+                                        <label for="message"
+                                            class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your
+                                            Message</label>
+
+                                        <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                                            class="input__color w-full px-3 py-2 placeholder-gray-300 border border-gray-300 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 text-gray-700 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                                            required></textarea>
+                                    </div>
+                                    <div class="mb-6">
+                                        <button type="submit"
+                                            class="contact__btn w-full px-3 py-4 rounded-md focus:bg-indigo-600 focus:outline-none">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                    <p class="text-base text-center text-gray-400" id="result"></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <!--==================== SPONSORS ====================-->
+        <!--<section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors1.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors2.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors3.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors4.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors5.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section>-->
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container n_container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Naughty Engineers Media</h3>
+                    <p class="footer__description">Building you that strong <br> online presence <br> to elevate your
+                        business.
+                    </p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <ul>
+                        <li class="footer__item">
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#about" class="footer__link">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#contactus" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <!--<div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">FAQs</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Support Center</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; Inspired by Bedimcode. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
